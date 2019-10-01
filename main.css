@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#introduction {
+    max-width: 250px;
+    padding: 1rem;
+}
