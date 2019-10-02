@@ -21,8 +21,13 @@ const fetchCharacter = function() {
             introDiv.innerText = `My name is ${data.name}, and I am the Grand Jedi Master of the Jedi Council. I was born in ${data.birth_year}, and have been training as a Jedi for over 800 years. I have ${data.hair_color} hair, and ${data.skin_color} skin. My passions include training padawans with a lightsaber and meditation. My greatest asset is my wisdom.`
             nameHeading.innerText = `${data.name}`
 
-
         })
+    fetch('https://swapi.co/api/planets/28/')
+        .then(response => response.json())
+        .then(otherData => {
+            homeworldDiv.innerText = `Homeworld: ${otherData.name}`
+        })
+
 }
 
 
